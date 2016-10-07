@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CF7AEE5C1DA7D26400586390 /* ELNKeyboardManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CF7AEE5A1DA7D26400586390 /* ELNKeyboardManager.h */; };
+		CF7AEE5C1DA7D26400586390 /* ELNKeyboardManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CF7AEE5A1DA7D26400586390 /* ELNKeyboardManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CF7AEE5D1DA7D26400586390 /* ELNKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CF7AEE5B1DA7D26400586390 /* ELNKeyboardManager.m */; };
 		CF7AEE601DA7D26F00586390 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF7AEE5F1DA7D26F00586390 /* Info.plist */; };
 		CF7AEE621DA7D2BC00586390 /* Default.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = CF7AEE611DA7D2BC00586390 /* Default.xcconfig */; };
