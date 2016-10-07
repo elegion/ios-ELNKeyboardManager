@@ -1,0 +1,16 @@
+PODS:
+  - ELNKeyboardManager (0.0.1)
+
+DEPENDENCIES:
+  - ELNKeyboardManager (from `../`)
+
+EXTERNAL SOURCES:
+  ELNKeyboardManager:
+    :path: ../
+
+SPEC CHECKSUMS:
+  ELNKeyboardManager: 1b3b2dedf67bb52f6cc806627ec395ef344946e0
+
+PODFILE CHECKSUM: 62044e536cf374d4f91c3444820c25566ade8ae2
+
+COCOAPODS: 1.1.0.rc.2

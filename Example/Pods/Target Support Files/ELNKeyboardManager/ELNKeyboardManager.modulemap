@@ -1,0 +1,6 @@
+framework module ELNKeyboardManager {
+  umbrella header "ELNKeyboardManager-umbrella.h"
+
+  export *
+  module * { export * }
+}
