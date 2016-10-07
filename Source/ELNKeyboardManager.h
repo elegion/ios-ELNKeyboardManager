@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @class ELNKeyboardManager;
 
 @protocol ELNKeyboardManagerDelegate <NSObject>
@@ -26,7 +28,7 @@
 /// Delegate method is invoked in an animation block.
 @interface ELNKeyboardManager : NSObject
 
-@property (nonatomic, weak) IBOutlet id<ELNKeyboardManagerDelegate> delegate;
+@property (nonatomic, weak, nullable) IBOutlet id<ELNKeyboardManagerDelegate> delegate;
 
 @property (nonatomic, assign) BOOL enabled;
 
@@ -37,3 +39,5 @@
 - (instancetype)initWithDelegate:(id<ELNKeyboardManagerDelegate>)delegate;
 
 @end
+
+NS_ASSUME_NONNULL_END

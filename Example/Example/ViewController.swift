@@ -11,14 +11,14 @@ import ELNKeyboardManager
 
 class ViewController: UIViewController, ELNKeyboardManagerDelegate {
     
-    var keyboardManager: ELNKeyboardManager! = nil
+    var keyboardManager = ELNKeyboardManager()
     
     @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        keyboardManager = ELNKeyboardManager(delegate: self)
+        keyboardManager.delegate = self
         view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(endEditing)))
     }
     
@@ -40,7 +40,7 @@ class ViewController: UIViewController, ELNKeyboardManagerDelegate {
     
     //MARK: ELNKeyboardManagerDelegate
     
-    func keyboardManager(_ keyboardManager: ELNKeyboardManager!, willChangeKeyboardFrameWithFrameBegin frameBegin: CGRect, frameEnd: CGRect) {
+    func keyboardManager(_ keyboardManager: ELNKeyboardManager, willChangeKeyboardFrameWithFrameBegin frameBegin: CGRect, frameEnd: CGRect) {
         let dY = frameBegin.origin.y - frameEnd.origin.y
         bottomConstraint.constant += dY
         self.view.layoutIfNeeded()
